@@ -29,7 +29,7 @@ Gdip_DisposeImage(bmpHaystack)
 Gdip_DisposeImage(bmpNeedle)
 Gdip_Shutdown(gdipToken)
 
-EXIT_LABEL: ; be really sure the script will shutdown GDIP
+EXIT_LABEL:
 Gdip_Shutdown(gdipToken)
 EXITAPP
 
