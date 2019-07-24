@@ -5,6 +5,7 @@ Process, Priority,, High
 
 #Include <Gdip>
 #Include <Gdip_ImageSearch>
+#Include <Gdip_BitmapFromHWND_EX>
 
 OnExit, EXIT_LABEL
 StartTickCout := A_TickCount
