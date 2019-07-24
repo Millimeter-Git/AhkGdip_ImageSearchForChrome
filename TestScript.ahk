@@ -3,9 +3,9 @@
 SetBatchLines, -1
 Process, Priority,, High
 
-#Include <Gdip>
-#Include <Gdip_ImageSearch>
-#Include <Gdip_BitmapFromHWND_EX>
+#Include Gdip.ahk
+#Include Gdip_ImageSearch.ahk
+#Include Gdip_BitmapFromHWND_EX.ahk
 
 OnExit, EXIT_LABEL
 StartTickCout := A_TickCount
