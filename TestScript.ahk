@@ -9,6 +9,7 @@ Process, Priority,, High
 
 OnExit, EXIT_LABEL
 StartTickCout := A_TickCount
+; Search cho cửa sổ chrome
 Win = ahk_class Chrome_WidgetWin_1
 
 hWin := WinExist(Win)
@@ -17,7 +18,9 @@ GetClientSize(hWin, wWidth, wHeight)
 
 gdipToken := Gdip_Startup()
 bmpHaystack := Gdip_BitmapFromHWND_EX(hWin,wWidth,wHeight)
-bmpNeedle := Gdip_CreateBitmapFromFile("IMG/needle.png")
+
+; Thay đổi needle.png bằng hình ảnh cần search của bạn
+bmpNeedle := Gdip_CreateBitmapFromFile("needle.png")
 RET := Gdip_ImageSearch(bmpHaystack,bmpNeedle,LIST,0,0,0,0,0,0xFFFFFF,1,0)
 
 MsgBox, % "Returned: " RET "`n`n" LIST "`n`nTime: " A_TickCount - StartTickCout
