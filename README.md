@@ -1,0 +1,2 @@
+# AhkGdip_ImageSearchForChrome
+Gdip_ImageSearch for Chrome
