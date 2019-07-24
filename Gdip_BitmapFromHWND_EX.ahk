@@ -6,7 +6,7 @@
 ; Description			Thay thế cho hàm Gdip_BitmapFromHWND
 ;
 ; hwnd					handle to the window to get a bitmap from
-;
+; w, h					Chiều dài và chiều rộng của cửa sổ cần lấy bitmap
 ; return				If the function succeeds, the return value is a pointer to a gdi+ bitmap
 ;
 ; notes					Window must not be not minimised in order to get a handle to it's client area
